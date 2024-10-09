@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,39 +7,46 @@
     <title>Richard Onyekwere's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5;
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #007BFF;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
         section {
-            max-width: 1200px;
-            margin: 20px auto;
+            max-width: 1100px;
+            margin: 40px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .introduction {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         .introduction p {
-            font-size: 1.2em;
-            margin: 0;
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #555;
         }
         h2 {
-            color: #4CAF50;
+            color: #007BFF;
+            font-size: 2em;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+            padding-bottom: 10px;
         }
         .project-list {
             list-style-type: none;
@@ -46,26 +54,45 @@
         }
         .project-list li {
             background-color: #f9f9f9;
-            margin-bottom: 15px;
-            padding: 15px;
-            border-left: 5px solid #4CAF50;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #007BFF;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .project-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
         .project-list li h3 {
-            margin: 0;
-            font-size: 1.5em;
+            margin: 0 0 10px;
+            font-size: 1.7em;
+            color: #007BFF;
         }
         .project-list li p {
-            margin: 5px 0 0;
-            font-size: 1em;
+            margin: 5px 0 10px;
+            font-size: 1.1em;
+            color: #444;
+        }
+        .project-list li .skills {
+            font-style: italic;
+            color: #777;
         }
         footer {
-            background-color: #4CAF50;
+            background-color: #007BFF;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 20px;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -78,7 +105,7 @@
     <section>
         <div class="introduction">
             <h2>About Me</h2>
-            <p>Hi, I'm Richard Onyekwere, an IT Engineer with 6+ years of experience in systems administration, IT operations, and enterprise application support. I'm passionate about enhancing system efficiency, troubleshooting technical issues, and implementing innovative solutions.</p>
+            <p>Hi, I'm Richard Onyekwere, an IT Engineer with over 6 years of experience in systems administration, IT operations, and enterprise applications support. I'm passionate about enhancing system efficiency and delivering innovative solutions.</p>
         </div>
 
         <div class="projects">
@@ -86,26 +113,26 @@
             <ul class="project-list">
                 <li>
                     <h3>JavaScript Animation</h3>
-                    <p>Developed an interactive JavaScript animation using the Canvas API at James Cook University, where users can control the movement of an animated animal.</p>
-                    <p><strong>Skills:</strong> JavaScript, Canvas API</p>
+                    <p>Developed an interactive JavaScript animation using the Canvas API at James Cook University, allowing users to control the movement of an animated animal on a canvas.</p>
+                    <p class="skills"><strong>Skills:</strong> JavaScript, Canvas API</p>
                 </li>
                 <li>
-                    <h3>Booking Web Application for a Hotel</h3>
-                    <p>Created a booking web application for Turbot House Hotel as part of my MIT capstone project. The system enables customers to book rooms online and integrates securely with backend systems.</p>
-                    <p><strong>Skills:</strong> PHP, HTML, CSS, APIs, MySQL, Apache, LAMP stack, secure coding</p>
+                    <h3>Hotel Booking Web Application</h3>
+                    <p>Designed a web application for Turbot House Hotel as part of my MIT capstone project. This system enables customers to book rooms online, securely handling transactions and backend operations.</p>
+                    <p class="skills"><strong>Skills:</strong> PHP, HTML, CSS, APIs, MySQL, Apache, LAMP stack, secure coding</p>
                 </li>
                 <li>
-                    <h3>Microsoft Active Directory Home Lab</h3>
-                    <p>Set up a home lab environment running Active Directory on Windows Server 2019 and Windows 10 client. This project helped solidify my understanding of networking, DNS, and DHCP.</p>
-                    <p><strong>Skills:</strong> Active Directory, Windows Server, Networking (DHCP, DNS)</p>
+                    <h3>Active Directory Home Lab</h3>
+                    <p>Built a home lab running Active Directory on Windows Server 2019 and Windows 10 clients. The project involved configuring DNS, DHCP, and enhancing my networking skills.</p>
+                    <p class="skills"><strong>Skills:</strong> Active Directory, Windows Server, Networking (DHCP, DNS)</p>
                 </li>
             </ul>
         </div>
     </section>
 
     <footer>
-        <p>Contact: <a href="mailto:onyekwererichardug@gmail.com" style="color: white;">onyekwererichardug@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/richardonyekwere" style="color: white;">LinkedIn</a></p>
+        <p>Contact: +61 422 136 780 | <a href="mailto:onyekwererichardug@gmail.com">onyekwererichardug@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/richardonyekwere">LinkedIn</a></p>
     </footer>
 
 </body>
