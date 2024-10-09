@@ -12,26 +12,38 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f0f2f5;
-            color: #333;
+            color: #444;
             line-height: 1.6;
         }
         header {
-            background-color: #007BFF;
+            background-color: #1E90FF;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            position: relative;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white;
         }
         section {
             max-width: 1000px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .introduction {
@@ -40,13 +52,14 @@
         }
         .introduction p {
             font-size: 1.1em;
-            color: #555;
+            color: #666;
         }
         h2 {
-            color: #007BFF;
+            color: #1E90FF;
             font-size: 2em;
             text-align: center;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         .project-list {
             list-style-type: none;
@@ -56,29 +69,33 @@
         .project-list li {
             background-color: #f9f9f9;
             margin-bottom: 15px;
-            padding: 15px;
-            border-left: 4px solid #007BFF;
-            border-radius: 5px;
+            padding: 20px;
+            border-left: 6px solid #1E90FF;
+            border-radius: 8px;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        .project-list li:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         .project-list li h3 {
-            color: #007BFF;
+            color: #1E90FF;
             margin-bottom: 10px;
-            font-size: 1.5em;
+            font-size: 1.7em;
         }
         .project-list li p {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-size: 1.1em;
-            color: #333;
+            color: #555;
         }
         .skills {
             font-style: italic;
-            color: #777;
+            color: #888;
         }
         footer {
-            background-color: #007BFF;
+            background-color: #1E90FF;
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 20px;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -90,11 +107,13 @@
         footer a:hover {
             text-decoration: underline;
         }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
 </head>
 <body>
 
     <header>
+        <img src="path_to_your_image.jpg" alt="Richard Onyekwere">
         <h1>Richard Onyekwere's Portfolio</h1>
     </header>
 
