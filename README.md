@@ -104,7 +104,7 @@
     </section>
 
     <footer>
-        <p>Contact: +61 422 136 780 | <a href="mailto:onyekwererichardug@gmail.com" style="color: white;">onyekwererichardug@gmail.com</a></p>
+        <p>Contact: <a href="mailto:onyekwererichardug@gmail.com" style="color: white;">onyekwererichardug@gmail.com</a></p>
         <p><a href="https://www.linkedin.com/in/richardonyekwere" style="color: white;">LinkedIn</a></p>
     </footer>
 
