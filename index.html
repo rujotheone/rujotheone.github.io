@@ -28,18 +28,18 @@
             justify-content: center;
         }
         header h1 {
-            font-size: 2.2em;
+            font-size: 1.8em; /* Smaller font size for header */
             margin-left: 20px;
         }
         header img {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             border: 3px solid white;
         }
         section {
             max-width: 1000px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
@@ -47,15 +47,15 @@
         }
         .introduction {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .introduction p {
-            font-size: 1.1em;
+            font-size: 1em; /* Reduced font size */
             color: #666;
         }
         h2 {
             color: #1E90FF;
-            font-size: 1.8em;
+            font-size: 1.5em; /* Smaller font size for subheadings */
             text-align: center;
             margin-bottom: 20px;
             font-weight: bold;
@@ -78,18 +78,24 @@
         }
         .project-list li h3 {
             color: #1E90FF;
-            margin-bottom: 10px;
-            font-size: 1.5em;
+            margin-bottom: 8px;
+            font-size: 1.3em; /* Reduced project title size */
         }
         .project-list li p {
-            margin-bottom: 8px;
-            font-size: 1.1em;
+            margin-bottom: 6px;
+            font-size: 1em;
             color: #555;
+        }
+        .project-list li .details {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 5px;
         }
         .project-list li a {
             color: #1E90FF;
             text-decoration: none;
             font-weight: bold;
+            font-size: 0.9em;
         }
         .project-list li a:hover {
             text-decoration: underline;
@@ -135,18 +141,21 @@
             <li>
                 <h3>JavaScript Animation</h3>
                 <p>Developed an interactive JavaScript animation using the Canvas API at James Cook University, allowing users to control the movement of an animated animal on a canvas.</p>
+                <p class="details"><strong>Date:</strong> July 2023 | <strong>Location:</strong> James Cook University</p>
                 <p class="skills"><strong>Skills:</strong> JavaScript, Canvas API</p>
                 <a href="https://github.com/yourusername/javascript-animation" target="_blank">View on GitHub</a>
             </li>
             <li>
                 <h3>Hotel Booking Web Application</h3>
                 <p>Designed a web application for Turbot House Hotel as part of my MIT capstone project. This system enables customers to book rooms online, securely handling transactions and backend operations.</p>
+                <p class="details"><strong>Date:</strong> August 2023 | <strong>Location:</strong> James Cook University</p>
                 <p class="skills"><strong>Skills:</strong> PHP, HTML, CSS, APIs, MySQL, Apache, LAMP stack, secure coding</p>
                 <a href="https://github.com/yourusername/hotel-booking-app" target="_blank">View on GitHub</a>
             </li>
             <li>
                 <h3>Active Directory Home Lab</h3>
                 <p>Built a home lab running Active Directory on Windows Server 2019 and Windows 10 clients. The project involved configuring DNS, DHCP, and enhancing my networking skills.</p>
+                <p class="details"><strong>Date:</strong> March 2024 | <strong>Location:</strong> Self-paced Project</p>
                 <p class="skills"><strong>Skills:</strong> Active Directory, Windows Server, Networking (DHCP, DNS)</p>
                 <a href="https://github.com/yourusername/ad-home-lab" target="_blank">View on GitHub</a>
             </li>
